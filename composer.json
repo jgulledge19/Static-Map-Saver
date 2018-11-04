@@ -1,0 +1,34 @@
+{
+  "name": "joshua19/static-map-saver",
+  "description": "Using Airtable API as the data feed to then build static map images from MapBox and then save it to disk.",
+  "license": "MIT",
+  "keywords": [
+    "map", "airtable", "mapbox"
+  ],
+  "authors": [
+    {
+      "name": "Joshua Gulledge",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Joshua19\\StaticMapSaver\\": "src/"
+    }
+  },
+  "bin": [
+    "bin/console"
+  ],
+  "require": {
+    "php" : ">=7.0.0",
+    "ext-SimpleXML": "*",
+    "vlucas/phpdotenv": "^2.5",
+    "symfony/console": ">=3.4",
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
