@@ -540,3 +540,4 @@ ASALocalRun/
 !/src/cache/temp.txt
 /images/
 !/images/text.txt
+!/bin/
