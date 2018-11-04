@@ -307,7 +307,7 @@ class API
     {
         $this->client = new Client([
             'base_uri' => $this->base_uri, // Base URI is used with relative requests
-            'timeout' => 15.0, // You can set any number of default request options.
+            'timeout' => 120.0, // You can set any number of default request options.
             'http_errors' => false, // http://docs.guzzlephp.org/en/latest/request-options.html#http-errors
             'verify' => $this->verify_ssl, // local windows machines sometimes give issues here
             'headers' => $this->client_headers, // http://docs.guzzlephp.org/en/latest/request-options.html#headers

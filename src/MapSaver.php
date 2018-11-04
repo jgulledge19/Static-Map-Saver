@@ -70,6 +70,7 @@ class MapSaver
     {
         if (empty($this->airTable)) {
             $this->airTable = new API($this->config['AIRTABLE_ORG_ID'], $this->config['AIRTABLE_API_KEY']);
+            $this->airTable->setVerifySsl($this->config['VERIFY_SSL']);
         }
 
         return $this->airTable;
@@ -153,6 +154,7 @@ class MapSaver
     {
         if (empty($this->mapBox)) {
             $this->mapBox = new MapBoxAPI($this->config['MAPBOX_USERNAME'], $this->config['MAPBOX_ACCESS_TOKEN']);
+            $this->mapBox->setVerifySsl($this->config['VERIFY_SSL']);
         }
 
         return $this->mapBox;
